@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>node chat</title>
+<style>
+#entry {
+background: white;
+width: 100%;
+font-size: inherit;
+padding: 1em;
+margin: 0;
+border-width: 0;
+outline-width: 0;
+clear: both;
+word-break: break-all;
+}   
+   
+#log {
+display: block;
+/* enough padding to clear the toolbar.. is there a better way to do this? */
+padding-bottom: 5.1em; 
+background: white;
+overflow: hidden;
+word-wrap:break-word;
+}   
+</style>
+<script type="text/javascript" src="socket.io.js"></script>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/client.js"></script>
+</head>
+<body>
+	<table border="1" width="100%" height="100%"><tbody>
+	<tr><td width="100%" height="80%">
+		<div id="log" class="logDiv">
+		<h3 align="center">NodeJS P2P Chat</h3>
+		</div>
+	</td></tr>
+	<tr><td width="100%" height="20%">
+		<div id="toolbar" class="chatDiv">
+		<ul id="status"></ul>
+		<input tabindex="1" type="text" id="entry" />
+		</div>
+	</td></tr>
+	</tbody></table> 
+</body>
+</html>
